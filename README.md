@@ -1,10 +1,12 @@
 # bamazon
 
-Welcome to Bamazon
+#Welcome to Bamazon
 
-Bamazon-Customer is an INQUIRER-driven command line order desk utilizing MYSQL for data storage. 
+##Overview
+Bamazon-Customer is a simple command-line order desk. Written in NODE.js bamazon utilizes npm packages for prompts (npm inquirer) and MYSQL queries and functions (npm MYSQL). 
 
-The basic workflow of bamazonCustomer.js is as follows:
+##Basic Flow
+The basic low of bamazonCustomer.js is as follows:
 
 On launch, bamazon connects to the MYSQL database and presents a simple prompt: "Would you like to place an order?"
 
