@@ -1,12 +1,11 @@
 //bamazon
-// USE bamazon_db;
 var inquirer = require("inquirer")
 var mysql = require('mysql')
 var prodArray = []
 
 var con = mysql.createConnection({
   host: "localhost",
-  port: "8889",
+  port: 8889,
   database: "bamazon_db",
   user: "root",
   password: "root"
@@ -17,9 +16,9 @@ con.connect(function(err) {
 });
 
 console.log("")
-console.log("|----------------------------------------|")
-console.log("|---------- Welcome to Bamazon ----------|")
-console.log("|----------------------------------------|")
+console.log("|-------------------------------------------------|")
+console.log("|--------------- Welcome to Bamazon --------------|")
+console.log("|-------------------------------------------------|")
 console.log("")
 
 promptUser = function() {
@@ -66,10 +65,10 @@ promptUser = function() {
 				placeOrder() 
 			}
 		})
-	}
+}
 
 placeOrder = function() {
-	inquirer.prompt([ //place this whole thing inside placeOrder
+	inquirer.prompt([
 	    {
 	      type: "confirm",
 	      message: "Would you like to place an order?",
