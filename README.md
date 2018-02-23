@@ -1,7 +1,7 @@
 # Welcome to Bamazon
 
 ## Overview
-Bamazon is a simple command-line order desk application. The current version includes two modules: Bamazon Customer is intended for use by customers to order products from available inventory and update inventory based on those orders. Bamazon Manager allows a user with manager access to view inventory, view low inventory, update inventory (add or remove as needed) and add new products. 
+Bamazon is a simple command-line order desk application. The current version includes two modules: Bamazon Customer is intended for use by customers to order products from available inventory and update inventory based on those orders. Bamazon Manager enables a user with manager access to view all inventory, view low inventory, update inventory (add or remove as needed) and add new products. 
 
 Written for Node.js, bamazon utilizes npm packages for prompts (npm inquirer) and MySQL queries and functions (npm MYSQL). 
 
@@ -34,3 +34,29 @@ Should the customer order more of an item than is avilable in current inventory,
 These prompts and orders continue until the customer chooses to not place an order. At that time, a final message is displayed and the database connection is terminated. 
 
 ![Bamazon](images/bamazon4.PNG)
+
+## Basic Application Flow - Bamazon Manager
+
+On launch, Bamazon Manager conntects to the database and present four options to the user. 
+
+![Bamazon](images/bamazonManger0.PNG)
+
+The first option, See All Products, shows all product in inventory with prices and stock level. 
+
+![Bamazon](images/bamazonManger1.PNG)
+
+In this example there are 10 items in inventory. Being a manager, this user is interestd in knowing which items are running low. With View Low Inventory, the manager can quickly see a list of items that have fewer than 5 units in stock and need to be replenished. 
+
+![Bamazon](images/bamazonManger2.PNG)
+
+The stock of Fountain Pens and Ink Refils, Blue are low. Usuing Update Inventory enables the manager to record new units added to the existing inventory. In this case, 10 new Fountain Pens were added to the existing inventory of 4 and 20 Ink Refill, Blue were added to the original 2. Now that Fountain Pens and Ink Refills are up to minimum levels, another check of low inventory shows that all items are at or above minimum stock levels.
+
+![Bamazon](images/bamazonManger3.PNG)
+
+The Update Inventory function can also be used to reduce stock quantities by the manager should a count show that actual inventories are lower than those reflected in the database. 
+
+The final function of Bamazon Manager enables a manager to add new products by specifying the name of the product, price and initial stock quantity.  Each new product is added to the database and automatically given a unique product ID.
+
+![Bamazon](images/bamazonManger4.PNG)
+
+Exit terminates the database connection and closes the application. 
