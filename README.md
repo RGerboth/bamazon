@@ -37,15 +37,15 @@ These prompts and orders continue until the customer chooses to not place an ord
 
 ## Application Flow - Bamazon Manager
 
-On launch, Bamazon Manager conntects to the database and presents four options to the user:cldear
+On launch, Bamazon Manager conntects to the database and presents four options to the user:
 
 ![Bamazon](images/bamazonManager0.PNG)
 
-The first option, *See All Products*, shows all product in inventory with prices and stock level. 
+The first option, *See All Products*, shows all products in inventory with prices and stock level. 
 
 ![Bamazon](images/bamazonManager1.PNG)
 
-In this example there are 10 items in inventory. Being a manager, this user is interested in knowing which items are running low. With *View Low Inventory*, the manager can quickly see a list of items that have fewer than 5 units in stock and need to be replenished. 
+In this example there are 10 items in inventory. Being a manager, this user is interested in knowing which items are running low. With *View Low Inventory*, the manager can quickly see a list of items that have fewer than 5 units in stock and that need to be replenished. 
 
 ![Bamazon](images/bamazonManager2.PNG)
 
