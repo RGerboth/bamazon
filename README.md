@@ -3,7 +3,9 @@
 ## Overview
 Bamazon is a simple command-line order desk application. The current version includes two modules: Bamazon Customer is intended for use by customers to order products from available inventory and update inventory based on those orders. Bamazon Manager enables a user with manager access to view all inventory, view low inventory, update inventory (add or remove as needed) and add new products. 
 
-Written for Node.js, bamazon utilizes npm packages for prompts (npm inquirer) and MySQL queries and functions (npm MYSQL). 
+Written for Node.js, Bamazon utilizes npm packages for:
+* npm inquirer (prompts and user input)
+* npm MYSQL (MySQL queries and functions) 
 
 ## Application Flow - Bamazon Customer
 
